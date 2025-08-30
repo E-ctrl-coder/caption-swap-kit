@@ -1,13 +1,13 @@
-@echo off
+﻿@echo off
 setlocal
 
-REM === Canonical English↔Arabic caption workflow ===
+REM === Canonical Englishâ†”Arabic caption workflow ===
 REM Input files must be placed in the "input" folder:
 REM   - original.srt   (captions)
 REM   - original.mp4   (video)
 REM Output will be written to the "output" folder.
 
-echo Translating captions (English ↔ Arabic)...
+echo Translating captions (English â†” Arabic)...
 python translate_srt.py
 
 echo.
