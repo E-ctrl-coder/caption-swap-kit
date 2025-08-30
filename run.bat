@@ -1,5 +1,13 @@
 @echo off
-echo Translating captions...
+setlocal
+
+REM === Canonical English↔Arabic caption workflow ===
+REM Input files must be placed in the "input" folder:
+REM   - original.srt   (captions)
+REM   - original.mp4   (video)
+REM Output will be written to the "output" folder.
+
+echo Translating captions (English ↔ Arabic)...
 python translate_srt.py
 
 echo.
@@ -11,3 +19,4 @@ echo Burning captions into video...
 python burn_captions.py
 
 pause
+endlocal
